@@ -34,6 +34,7 @@ redisio_install "redis-servers" do
   servers redis_instances
   safe_install redis['safe_install']
   base_piddir redis['base_piddir']
+  piddir redis['piddir']
   install_dir redis['install_dir']
 end
 
