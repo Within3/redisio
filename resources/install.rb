@@ -29,6 +29,7 @@ attribute :artifact_type, :kind_of => String, :default => 'tar.gz'
 attribute :base_name, :kind_of => String, :default => 'redis-'
 attribute :safe_install, :kind_of => [ TrueClass, FalseClass ], :default => true
 attribute :base_piddir, :kind_of => String, :default => '/var/run/redis'
+attribute :piddir, :kind_of => String, :default => nil
 
 attribute :install_dir, :kind_of => String, :default => nil
 

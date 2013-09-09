@@ -89,7 +89,7 @@ def configure
 
     recipe_eval do
       server_name = current['name'] || current['port']
-      piddir = "#{base_piddir}/#{server_name}"
+      piddir = new_resource.piddir ? new_resource.piddir : "#{base_piddir}/#{server_name}"
       aof_file = "#{current['datadir']}/appendonly-#{server_name}.aof"
       rdb_file = "#{current['datadir']}/dump-#{server_name}.rdb"
 

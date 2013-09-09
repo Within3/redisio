@@ -40,6 +40,7 @@ default['redisio']['base_name'] = 'redis-'
 default['redisio']['artifact_type'] = 'tar.gz'
 default['redisio']['version'] = '2.6.14'
 default['redisio']['base_piddir'] = '/var/run/redis'
+default['redisio']['piddir'] = nil
 
 #Custom installation directory
 default['redisio']['install_dir'] = nil
